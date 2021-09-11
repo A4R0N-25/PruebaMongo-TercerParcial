@@ -10,12 +10,8 @@
  */
 package ec.edu.espe.distribuidas.pruebaMongo.config;
 
-import ch.qos.logback.core.pattern.Converter;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
-import java.math.BigDecimal;
-import java.util.Arrays;
-import org.bson.types.Decimal128;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.MongoDatabaseFactory;
@@ -39,7 +35,7 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
 
     @Override
     public MongoClient mongoClient() {
-        return MongoClients.create("mongodb://localhost/prueba");
+        return MongoClients.create("mongodb://localhost/preuba");
     }
 
     @Override
